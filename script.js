@@ -11,8 +11,10 @@ const time = () => {
   let minuteVal = date.getMinutes();
   let secondVal = date.getSeconds();
 
+  console.log(hourVal);
+
   if (hourVal > 12) {
-    hourVal - 12;
+    hourVal = hourVal - 12;
   }
   if (hourVal == 0) {
     hourVal = 12;
